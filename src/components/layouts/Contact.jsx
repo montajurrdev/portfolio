@@ -3,7 +3,6 @@ import Container from "../Container";
 import Heading from "../Heading";
 import Input from "../Input";
 import { FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import { FaGithub, FaLocationDot, FaSquarePhone } from "react-icons/fa6";
 
 const Contact = () => {
@@ -86,31 +85,33 @@ const Contact = () => {
               <div className="grid gap-y-20">
                 <div className="text-white flex flex-col gap-y-6">
                   <p className="flex items-center justify-between">
-                    <Link className="flex items-center gap-x-3 text-[18px] w-[130px]">
+                    <a className="flex items-center gap-x-3 text-[18px] w-[130px]">
                       <FaLinkedin /> Linkedin
-                    </Link>
-                    <Link className="px-4 py-0 border rounded-full hover:bg-white hover:text-black text-[16px] transition-all ease-in-out duration-300">
+                    </a>
+                    <a className="px-4 py-0 border rounded-full hover:bg-white hover:text-black text-[16px] transition-all ease-in-out duration-300">
                       Follow
-                    </Link>
+                    </a>
                   </p>
                   <p className="flex items-center justify-between">
-                    <Link className="flex items-center gap-x-3 text-[18px] w-[130px]">
+                    <a className="flex items-center gap-x-3 text-[18px] w-[130px]">
                       <FaGithub /> GitHub
-                    </Link>
-                    <Link className="px-4 py-0 border rounded-full hover:bg-white hover:text-black text-[16px] transition-all ease-in-out duration-300">
+                    </a>
+                    <a className="px-4 py-0 border rounded-full hover:bg-white hover:text-black text-[16px] transition-all ease-in-out duration-300">
                       Follow
-                    </Link>
+                    </a>
                   </p>
                 </div>
                 <div className="text-white flex flex-col gap-y-6 ">
                   <p className="flex items-center gap-x-3 text-[18px]">
                     <FaSquarePhone /> <span className="w-[85px]">Phone</span>:{" "}
-                    <span>--------</span>
+                    <span>01844906613</span>
+                    {/* <span>--------</span> */}
                   </p>
 
                   <p className="flex items-center gap-x-3 text-[18px]">
                     <FaLocationDot /> <span className="w-[85px]">Location</span>
-                    : <span>--------</span>
+                    : <span>Dhaka, Bangladesh</span>
+                    {/* : <span>--------</span> */}
                   </p>
                 </div>
               </div>

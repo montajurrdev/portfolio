@@ -8,21 +8,21 @@ import project_04 from "/src/assets/project-04.png";
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
-  return (
+  return ( 
     <section id="work">
-      <Container className={"pt-20"}>
-        <div className="pb-8">
+      <Container className={"py-16 md:py-20"}>
+        <div className="pb-12 text-center text-zinc-900">
           <Heading
             text="Project Gallery"
             as="h2"
-            className="text-[40px] font-bold text-center "
+            className="text-3xl md:text-5xl font-bold"
           />
-          <p className="text-[18px]  text-center pt-2">
+          <p className="text-base md:text-lg max-w-3xl mx-auto text-center pt-4 leading-relaxed ">
             A showcase of my recent projects, featuring clean UI, modern
             frontend development, and responsive user experiences.
           </p>
         </div>
-        <div className="flex justify-between items-center flex-wrap text-center gap-y-5 -mx-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 ">
           <ProjectCard
             projectImg={project_01}
             projectType="Frontend Development"

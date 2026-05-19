@@ -34,13 +34,14 @@ const Header = () => {
                   (item, index) => (
                     <li key={index} className="text-center">
                       <Link
-                        key={index}
+                        
                         to={item.toLowerCase()}
                         smooth={true}
-                        duration={500}
+                        duration={1000}
                         className="text-[#232323] transition-all hover:bg-gray-700 hover:text-[#fafafa] hover:rounded-md py-2 px-4 ease-in-out duration-300 cursor-pointer"
                         activeClass="active"
                         spy={true}
+                        offset={-80}
                       >
                         {item}
                       </Link>
@@ -63,40 +64,53 @@ const Header = () => {
             {/* Hire Me Button */}
             <div className="hidden lg:flex items-center justify-center">
               <Link
-                to="hire"
+                to="contact"
                 smooth={true}
-                duration={500}
-                className="cursor-pointer  text-white text-sm font-bold py-2 px-6 bg-teal-600 rounded-md hover:bg-gray-700 hover:scale-105 transition-all ease-in-out duration-300"
+                duration={1000}
+                className="cursor-pointer  text-white text-base font-bold py-1.5 px-6 bg-teal-600 rounded-md hover:bg-gray-700 hover:scale-105 transition-all ease-in-out duration-300"
               >
-                HIRE ME
+                Let's Work Together
               </Link>
             </div>
           </Flex>
 
           {/* mobile menu  */}
           {handleMenu && (
-            <div className="bg-[#232323] p-6 ">
-              <ul className="flex flex-col gap-5 text-center uppercase font-semibold ">
-                {["Home", "About", "Skill", "Work", "Contact"].map(
-                  (item, index) => {
-                    return (
-                      <>
-                        <li key={index}>
-                          <Link
-                            to={item.toLowerCase()}
-                            smooth={true}
-                            duration={500}
-                            onClick={() => setMenu(false)}
-                            className="text-white cursor-pointer hover:text-teal-400 transition"
-                          >
-                            {item}
-                          </Link>
-                        </li>
-                      </>
-                    );
-                  },
-                )}
-              </ul>
+            <div className="bg-[#232323] p-6">
+              {/* nav  */}
+              <div className="w-full">
+                <ul className="flex flex-col gap-4 text-center uppercase font-semibold ">
+                  {["Home", "About", "Skill", "Work", "Contact"].map(
+                    (item, index) => {
+                      return (
+                          <li key={index} className="w-full">
+                            <Link
+                              to={item.toLowerCase()}
+                              smooth={true}
+                              duration={1000}
+                              onClick={() => setMenu(false)}
+                              className="text-white w-full block bg-zinc-800 shadow-xl rounded-xl  py-1 cursor-pointer hover:text-teal-400 transition"
+                            >
+                              {item}
+                            </Link>
+                          </li>
+                      );
+                    },
+                  )}
+                </ul>
+              </div>
+              {/* Hire Me Button */}
+              <div className="flex items-center justify-center mt-10">
+                <Link
+                  to="contact"
+                  onClick={()=> setMenu(false)}
+                  smooth={true}
+                  duration={1000}
+                  className="cursor-pointer w-full text-center  text-white text-sm md:text-base font-bold py-2 px-6 bg-teal-600 rounded-md hover:bg-gray-700 hover:scale-105 transition-all ease-in-out duration-300"
+                >
+                  Let's Work Together
+                </Link>
+              </div>
             </div>
           )}
         </Container>

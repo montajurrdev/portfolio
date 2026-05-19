@@ -3,6 +3,7 @@ import Container from "../Container";
 import Heading from "../Heading";
 import { Link } from "react-scroll";
 import myphoto from "/src/assets/myphoto.jpg";
+import { SiGoogledocs } from "react-icons/si";
 
 const About = () => {
   return (
@@ -55,7 +56,7 @@ const About = () => {
                       download
                       className="bg-gradient-to-r hover:from-teal-500 hover:via-green-500 hover:to-blue-500 text-white hover:text-[#232323] font-medium py-3.5 px-7 border border-teal-700 rounded-lg flex items-center justify-center gap-2 w-full transition ease-in-out duration-300"
                     >
-                      <span>📄</span> Download My Resume
+                      <SiGoogledocs /> Download Resume
                     </a>
                     <Link className="cursor-pointer mt-10 bg-gradient-to-r hover:from-teal-500 hover:via-green-500 hover:to-blue-500 text-white hover:text-[#232323] font-medium py-3.5 px-7 border border-teal-700 rounded-lg flex items-center gap-2 w-full  justify-center transition ease-in-out duration-300">
                       Contact Me
@@ -89,15 +90,15 @@ const About = () => {
                 </p>
 
                 {/* Highlight Cards */}
-                <div className="flex flex-col gap-3 my-8 text-[14px] md:text-base">
-                  <div className="flex items-center gap-3 bg-[#3B4656] p-4 rounded-xl shadow">
-                    <span>🎯</span> <p>1+ Years Experience</p>
+                <div className="flex flex-col gap-3 my-8 text-sm md:text-base">
+                  <div className=" bg-[#3B4656] p-4 rounded-xl shadow">
+                    <p>1+ Years Experience</p>
                   </div>
-                  <div className="flex items-center gap-3 bg-[#3B4656] p-4 rounded-xl shadow">
-                    <span>💡</span> <p>React & UI Specialist</p>
+                  <div className=" bg-[#3B4656] p-4 rounded-xl shadow">
+                    <p>React & UI Specialist</p>
                   </div>
-                  <div className="flex items-center gap-3 bg-[#3B4656] p-4 rounded-xl shadow">
-                    <span>🚀</span> <p>Always Learning & Improving</p>
+                  <div className=" bg-[#3B4656] p-4 rounded-xl shadow">
+                    <p>Always Learning & Improving</p>
                   </div>
                 </div>
                 <p className="text-base md:text-lg leading-relaxed mb-4">

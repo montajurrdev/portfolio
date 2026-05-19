@@ -88,29 +88,37 @@ const Contact = () => {
 
             {/* RIGHT SIDE - FORM */}
             <div className=" bg-slate-600 p-6 md:p-8 rounded-2xl shadow-lg ">
-              <form className="space-y-6">
+              <form
+                action={"https://formspree.io/f/mnjrnzal"}
+                method="POST"
+                className="space-y-6"
+              >
                 <Input
                   type="text"
+                  name={"name"}
                   placeholder="Your Name"
                   className=" w-full py-3 px-4 rounded-lg outline-none text-black"
                 />
 
                 <Input
                   type="email"
+                  name={"email"}
                   placeholder="Your Email"
                   className=" w-full py-3 px-4 rounded-lg outline-none text-black"
                 />
 
                 <textarea
                   placeholder="Your Message"
+                  name="message"
                   className=" w-full h-40 rounded-lg outline-none px-4 py-3 text-white "
                 />
 
-                <Input
-                  type={"submit"}
-                  value={"Send Message"}
-                  className=" w-full py-3 rounded-lg bg-gradient-to-r from-teal-500 via-green-500 to-blue-500 font-semibold hover:opacity-90 transition"
-                />
+                <button
+                  type="submit"
+                  className="w-full py-3 rounded-lg bg-gradient-to-r from-teal-500 via-green-500 to-blue-500 font-semibold hover:opacity-90 transition cursor-pointer"
+                >
+                  Send Message
+                </button>
               </form>
             </div>
           </div>

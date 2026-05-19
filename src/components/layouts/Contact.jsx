@@ -92,6 +92,7 @@ const Contact = () => {
                 action={"https://formspree.io/f/mnjrnzal"}
                 method="POST"
                 className="space-y-6"
+                
               >
                 <Input
                   type="text"
@@ -110,6 +111,7 @@ const Contact = () => {
                 <textarea
                   placeholder="Your Message"
                   name="message"
+                  required
                   className=" w-full h-40 rounded-lg outline-none px-4 py-3 text-white "
                 />
 

@@ -58,7 +58,7 @@ const About = () => {
                     >
                       <SiGoogledocs /> Download Resume
                     </a>
-                    <Link className="cursor-pointer mt-10 bg-gradient-to-r hover:from-teal-500 hover:via-green-500 hover:to-blue-500 text-white hover:text-[#232323] font-medium py-3.5 px-7 border border-teal-700 rounded-lg flex items-center gap-2 w-full  justify-center transition ease-in-out duration-300">
+                    <Link to="contact" smooth={true} duration={1000} className="cursor-pointer mt-10 bg-gradient-to-r hover:from-teal-500 hover:via-green-500 hover:to-blue-500 text-white hover:text-[#232323] font-medium py-3.5 px-7 border border-teal-700 rounded-lg flex items-center gap-2 w-full  justify-center transition ease-in-out duration-300">
                       Contact Me
                     </Link>
                   </div>
